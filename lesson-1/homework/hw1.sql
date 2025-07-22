@@ -6,4 +6,5 @@
 Create table Students (StudentID INT PRIMARY KEY , Name VARCHAR(50), Age INT);
 6.SQL - это язык структурных запросов, SQL server - Это сервер в которых храняться данные, SSMN - это инструмент котрый позволяет писать запросы и выявляется ответ на экран
 7.DQL - это select, вызов запроса, DML - отвечает за управления запросами таких как (INSERT, DELETE, UPDATE),  DDL - отвечает за изменение базу данных, добавляя или удаляя данные, DCL - это команда управления правами, TCL - запрос по Управлению транзакциями.
-Insert Into Students (StudentID, Name, Age) values (1, Bobur Erkinov, 28)
+8.Insert Into Students (StudentID, Name, Age) values (1, Bobur Erkinov, 28)
+9. Заходим в SSMS - выбераем базу данных - щелкаем правой кнопкой мыщи - выбераем востановить базу данных - устройтво и указываем путь файла - находим и выбераем - ок 
