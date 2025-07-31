@@ -79,4 +79,34 @@ ORDER BY City ASC, PostalCode DESC;
 FROM Products 
 ORDER BY Amount DESC;
 ----
-21. 
+21. SELECT 
+    EmployeeID,
+    FirstName + ' ' + LastName AS FullName
+FROM Employees;
+---
+22. SELECT DISTINCT Category, ProductName, Price 
+FROM Products 
+WHERE Price > 50;
+----
+23. SELECT * 
+FROM Products 
+WHERE Price < 0.1 * (SELECT AVG(Price) FROM Products);
+----
+24. SELECT * 
+FROM Employees 
+WHERE Age < 30 
+  AND Department IN ('HR', 'IT');
+----
+25. SELECT * 
+FROM Customers 
+WHERE Email LIKE '%@gmail.com%';
+26. SELECT * 
+FROM Employees 
+WHERE Salary > ALL (
+    SELECT Salary 
+    FROM Employees 
+    WHERE Department = 'Sales'
+);
+27. SELECT * 
+FROM Orders 
+WHERE LATEST_DATE BETWEEN DATEADD(DAY, -180, GETDATE()) AND GETDATE();
