@@ -1,9 +1,9 @@
 1. SELECT TOP 5 * 
 FROM Employees;
 ----
-2. SELECT * 
-FROM Employees 
-LIMIT 5;
+2. SELECT TOP 10 * 
+FROM Products 
+ORDER BY Price DESC;
 ---
 3. SELECT DISTINCT Category 
 FROM Products;
@@ -23,7 +23,7 @@ WHERE Salary >= 60000 AND Department = 'HR';
     EmployeeID,
     FirstName,
     LastName,
-    ISNULL(Email, 'No') AS Email
+    ISNULL(Email, 'No@gmail.com') AS Email
 FROM Employees;
 ---
 8. SELECT * FROM Products 
